@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAYER3D — Shop 3D Printed Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS — VERTICAL SIDE -->
+  <div class="scroll-track-v" id="scrollTrackV">
+    <div class="scroll-bar-v" id="scrollBarV"></div>
+    <div class="scroll-nozzle-v" id="scrollNozzleV">
+      <div class="snv-body"></div>
+      <div class="snv-tip"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">LAYER<span>3</span>D</a>
+      <ul class="nav-links">
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#custom">Custom Print</a></li>
+        <li><a href="#contact" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#custom">Custom Print</a>
+      <a href="#contact">Order Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Free shipping on orders above ₹999</div>
+      <h1 class="hero-title">
+        <span class="title-line">Real Prints.</span>
+        <span class="title-line accent">Real Quality.</span>
+        <span class="title-line">Ready to Ship.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Browse our collection of precision 3D printed products — decor, gadgets,
+        tools, and art. Every piece made fresh, right here in India.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+        <a href="#gallery" class="btn btn-outline">See Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Avg Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+
+        <!-- floating info cards -->
+        <div class="floating-card card-1">
+          <span class="fc-icon">📦</span>
+          <div><strong>Ships in 24h</strong><span>Pan India delivery</span></div>
+        </div>
+        <div class="floating-card card-2">
+          <span class="fc-icon">⭐</span>
+          <div><strong>Top Rated</strong><span>4.9 / 5 stars</span></div>
+        </div>
+        <div class="floating-card card-3">
+          <span class="fc-icon">🎨</span>
+          <div><strong>50+ Colors</strong><span>Pick yours</span></div>
+        </div>
+
+        <!-- Printer head in center -->
+        <div class="printer-wrap">
+          <div class="printer-head">
+            <div class="ph-rod"></div>
+            <div class="ph-carriage">
+              <div class="ph-body">
+                <div class="ph-fan"><div class="ph-fan-blade"></div><div class="ph-fan-blade"></div><div class="ph-fan-blade"></div><div class="ph-fan-blade"></div></div>
+                <div class="ph-body-detail"><div class="ph-led"></div></div>
+              </div>
+              <div class="ph-heatbreak"></div>
+              <div class="ph-heater-block"><div class="ph-heater-lines"><span></span><span></span><span></span></div></div>
+              <div class="ph-nozzle"></div>
+              <div class="ph-filament">
+                <div class="ph-fil-dot d1"></div>
+                <div class="ph-fil-dot d2"></div>
+                <div class="ph-fil-dot d3"></div>
+              </div>
+            </div>
+            <div class="ph-print-bed">
+              <div class="ph-layer l1"></div>
+              <div class="ph-layer l2"></div>
+              <div class="ph-layer l3"></div>
+              <div class="ph-layer l4"></div>
+              <div class="ph-layer l5"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><span>📦</span><span>Free shipping above ₹999</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>⚡</span><span>Ships within 24 hours</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>🔄</span><span>Easy returns & replacements</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>🇮🇳</span><span>Made in India</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span>💬</span><span>WhatsApp support</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse</span>
+        <h2>Shop by <span class="accent">Category</span></h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" onclick="filterCategory('decor')" data-animate>
+          <div class="cat-icon" style="background:#fde8e8;">🏠</div>
+          <strong>Home Decor</strong>
+          <span>Vases, planters, wall art</span>
+        </div>
+        <div class="cat-card" onclick="filterCategory('gadgets')" data-animate>
+          <div class="cat-icon" style="background:#e8f0fd;">🖥️</div>
+          <strong>Desk Gadgets</strong>
+          <span>Stands, hooks, organizers</span>
+        </div>
+        <div class="cat-card" onclick="filterCategory('tools')" data-animate>
+          <div class="cat-icon" style="background:#e8fdf0;">🔧</div>
+          <strong>Tools & Utility</strong>
+          <span>Clips, mounts, holders</span>
+        </div>
+        <div class="cat-card" onclick="filterCategory('art')" data-animate>
+          <div class="cat-icon" style="background:#fdf5e8;">🎨</div>
+          <strong>Art & Gifts</strong>
+          <span>Figurines, mandalas, trophies</span>
+        </div>
+        <div class="cat-card" onclick="filterCategory('miniatures')" data-animate>
+          <div class="cat-icon" style="background:#f5e8fd;">🐉</div>
+          <strong>Miniatures</strong>
+          <span>Characters, models, dioramas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products-header">
+        <div>
+          <span class="section-tag">Our Store</span>
+          <h2>All <span class="accent">Products</span></h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="decor">Decor</button>
+          <button class="filter-btn" data-filter="gadgets">Gadgets</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+          <button class="filter-btn" data-filter="art">Art</button>
+          <button class="filter-btn" data-filter="miniatures">Miniatures</button>
+        </div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card" data-category="decor" data-animate>
+          <div class="product-img" style="background:#fde8e8;">
+            <div class="product-model decor-model" style="border-color:#e84545;border-top-color:#e84545;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Decor</span>
+            <h4>Geometric Vase</h4>
+            <p>Low-poly minimalist vase — perfect desktop accent.</p>
+            <div class="product-footer">
+              <span class="price">₹ 499</span>
+              <button class="add-btn" onclick="addToCart(this, 'Geometric Vase', 499)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="gadgets" data-animate>
+          <div class="product-img" style="background:#e8f0fd;">
+            <div class="product-model gadget-model" style="border-color:#4a8fe8;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Gadgets</span>
+            <h4>Phone Stand Pro</h4>
+            <p>Adjustable angle, cable management built-in.</p>
+            <div class="product-footer">
+              <span class="price">₹ 349</span>
+              <button class="add-btn" onclick="addToCart(this, 'Phone Stand Pro', 349)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="tools" data-animate>
+          <div class="product-img" style="background:#e8fdf0;">
+            <div class="product-model tool-model" style="background:rgba(74,172,130,0.25);"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Tools</span>
+            <h4>Cable Organizer Set</h4>
+            <p>5-piece set for desk cable management. Wall-mount ready.</p>
+            <div class="product-footer">
+              <span class="price">₹ 299</span>
+              <button class="add-btn" onclick="addToCart(this, 'Cable Organizer Set', 299)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="art" data-animate>
+          <div class="product-img" style="background:#fdf5e8;">
+            <div class="product-model art-model" style="border-color:#e8a84a;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Art</span>
+            <h4>Mandala Wall Art</h4>
+            <p>Intricate layered mandala, 200mm diameter. Wall-mount included.</p>
+            <div class="product-footer">
+              <span class="price">₹ 799</span>
+              <button class="add-btn" onclick="addToCart(this, 'Mandala Wall Art', 799)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="decor" data-animate>
+          <div class="product-img" style="background:#e8fdf0;">
+            <div class="product-model decor2-model" style="border-color:#4aac82;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Decor</span>
+            <h4>Geometric Planter</h4>
+            <p>Self-watering design. Drainage hole included. 3 sizes available.</p>
+            <div class="product-footer">
+              <span class="price">₹ 649</span>
+              <button class="add-btn" onclick="addToCart(this, 'Geometric Planter', 649)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="gadgets" data-animate>
+          <div class="product-img" style="background:#fde8f5;">
+            <div class="product-model gadget2-model" style="border-color:#d95fa0;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Gadgets</span>
+            <h4>Headphone Hook</h4>
+            <p>Under-desk mount. Fits all headphone sizes. No screws needed.</p>
+            <div class="product-footer">
+              <span class="price">₹ 249</span>
+              <button class="add-btn" onclick="addToCart(this, 'Headphone Hook', 249)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="miniatures" data-animate>
+          <div class="product-img" style="background:#f5e8fd;">
+            <div class="product-model decor-model" style="border-color:#9b5ea7;border-top-color:#9b5ea7;width:60px;height:60px;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Miniatures</span>
+            <h4>Dragon Figurine</h4>
+            <p>High-detail resin miniature. Hand-finished. Display-ready.</p>
+            <div class="product-footer">
+              <span class="price">₹ 899</span>
+              <button class="add-btn" onclick="addToCart(this, 'Dragon Figurine', 899)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="art" data-animate>
+          <div class="product-img" style="background:#fde8e8;">
+            <div class="product-model art-model" style="border-color:#e84545;width:90px;height:90px;"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Art</span>
+            <h4>Name Plaque</h4>
+            <p>Personalized wall plaque. Custom text, any font, any color.</p>
+            <div class="product-footer">
+              <span class="price">₹ 549</span>
+              <button class="add-btn" onclick="addToCart(this, 'Name Plaque', 549)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="tools" data-animate>
+          <div class="product-img" style="background:#e8f0fd;">
+            <div class="product-model tool-model" style="background:rgba(74,143,232,0.25);"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Tools</span>
+            <h4>Wall Key Holder</h4>
+            <p>Magnetic key rack. 6 hooks. Mounts with adhesive tape.</p>
+            <div class="product-footer">
+              <span class="price">₹ 399</span>
+              <button class="add-btn" onclick="addToCart(this, 'Wall Key Holder', 399)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button onclick="closeCart()" class="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">Your cart is empty</div>
+    </div>
+
+    <!-- IMPULSE BUY STRIP — only shown when cart has items -->
+    <div class="impulse-strip" id="impulseStrip" style="display:none;">
+      <div class="impulse-label">
+        <span class="impulse-tag">🔥 Quick Add</span>
+        <span class="impulse-sub">People usually grab these too</span>
+      </div>
+      <div class="impulse-scroll" id="impulseScroll"></div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cartTotal">₹ 0</span></div>
+      <a href="#contact" class="btn btn-primary" onclick="closeCart(); document.getElementById('orderNote').value = getCartSummary();">Proceed to Order</a>
+    </div>
+  </div>
+  <button class="cart-btn" id="cartBtn" onclick="openCart()">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2>Fresh Off <span class="accent">The Printer</span></h2>
+        <p>Every item you see was made by us — printed, finished, and ready.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall" data-animate style="background:#fde8e8;">
+          <div class="gallery-placeholder"><div class="gallery-shape shape-1"></div></div>
+          <div class="gallery-overlay"><span>Geometric Vase Set</span></div>
+        </div>
+        <div class="gallery-item" data-animate style="background:#fdf5e8;">
+          <div class="gallery-placeholder"><div class="gallery-shape shape-2"></div></div>
+          <div class="gallery-overlay"><span>Dragon Miniature</span></div>
+        </div>
+        <div class="gallery-item" data-animate style="background:#e8f0fd;">
+          <div class="gallery-placeholder"><div class="gallery-shape shape-3"></div></div>
+          <div class="gallery-overlay"><span>Desk Organizer</span></div>
+        </div>
+        <div class="gallery-item wide" data-animate style="background:#e8fdf0;">
+          <div class="gallery-placeholder"><div class="gallery-shape shape-4"></div></div>
+          <div class="gallery-overlay"><span>Mandala Wall Art</span></div>
+        </div>
+        <div class="gallery-item" data-animate style="background:#f5e8fd;">
+          <div class="gallery-placeholder"><div class="gallery-shape shape-5"></div></div>
+          <div class="gallery-overlay"><span>Custom Name Plaque</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reviews</span>
+        <h2>What Customers <span class="accent">Say</span></h2>
+        <p>500+ orders delivered. Here's what people think.</p>
+      </div>
+      <div class="testimonials-track">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The geometric vase is stunning. Packaging was perfect, arrived in 2 days. Already ordered 2 more as gifts!"</p>
+          <div class="reviewer"><div class="avatar">R</div><div><strong>Rahul M.</strong><span>Bought: Geometric Vase</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Phone stand is super sturdy and the cable slot is genius. Looks great on my desk. Worth every rupee."</p>
+          <div class="reviewer"><div class="avatar">P</div><div><strong>Priya S.</strong><span>Bought: Phone Stand Pro</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Ordered the mandala wall art — the detail is insane. People keep asking where I got it from."</p>
+          <div class="reviewer"><div class="avatar">A</div><div><strong>Arjun K.</strong><span>Bought: Mandala Wall Art</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★☆</div>
+          <p>"Great quality planter. The team helped me pick the right size over WhatsApp. Super responsive."</p>
+          <div class="reviewer"><div class="avatar">S</div><div><strong>Sneha T.</strong><span>Bought: Geometric Planter</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM PRINT — SECONDARY COMPACT -->
+  <section class="custom" id="custom">
+    <div class="container">
+      <div class="custom-banner" data-animate>
+        <div class="custom-banner-text">
+          <span class="section-tag">Also Available</span>
+          <h2>Need Something <span class="accent">Custom?</span></h2>
+          <p>Can't find what you're looking for? We print custom designs too — send us your idea, STL file, or just describe it. We'll get it done.</p>
+          <ul class="custom-features">
+            <li><span class="check">✓</span> Any shape, any size</li>
+            <li><span class="check">✓</span> Quote within 2 hours</li>
+            <li><span class="check">✓</span> PLA, ABS, PETG, Resin, TPU</li>
+            <li><span class="check">✓</span> Upload file or just describe your idea</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Request a Custom Quote</a>
+        </div>
+        <div class="custom-form-card" data-animate>
+          <h3>Quick Custom Request</h3>
+          <form class="custom-form" onsubmit="submitCustomOrder(event)">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required />
+              <input type="tel" placeholder="WhatsApp Number" required />
+            </div>
+            <textarea placeholder="Describe your idea — what do you need printed?" rows="3" required></textarea>
+            <div class="file-upload">
+              <label>
+                <input type="file" accept=".stl,.obj,.step,.png,.jpg" />
+                <span>📎 Attach file (STL, OBJ, image) — Optional</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info" data-animate>
+          <span class="section-tag">Get In Touch</span>
+          <h2>Questions? <span class="accent">We're Here.</span></h2>
+          <p>Order support, product questions, bulk orders — reach out any time.</p>
+          <div class="contact-methods">
+            <a href="https://wa.me/919999999999" class="contact-method">
+              <span class="c-icon">💬</span>
+              <div><strong>WhatsApp</strong><span>Fastest way to reach us</span></div>
+            </a>
+            <a href="mailto:hello@layered3d.in" class="contact-method">
+              <span class="c-icon">✉️</span>
+              <div><strong>Email</strong><span>hello@layered3d.in</span></div>
+            </a>
+            <div class="contact-method">
+              <span class="c-icon">📍</span>
+              <div><strong>Location</strong><span>Your City, India</span></div>
+            </div>
+            <div class="contact-method">
+              <span class="c-icon">⏱</span>
+              <div><strong>Response Time</strong><span>Within 2 hours</span></div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" data-animate onsubmit="submitContact(event)">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea id="orderNote" placeholder="Your message..." rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">LAYER<span>3</span>D</a>
+          <p>Quality 3D printed products — delivered fresh across India.</p>
+          <div class="socials">
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">yt</a>
+            <a href="#" class="social-link">wa</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Shop</h4>
+          <a href="#products">All Products</a>
+          <a href="#categories">Categories</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+        <div class="footer-links">
+          <h4>Materials</h4>
+          <a href="#">PLA / PLA+</a>
+          <a href="#">ABS / ASA</a>
+          <a href="#">PETG</a>
+          <a href="#">TPU (Flexible)</a>
+          <a href="#">Resin (SLA)</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="#">How to Order</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns Policy</a>
+          <a href="#">FAQ</a>
+          <a href="#custom">Custom Print</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 LAYER3D. All rights reserved.</p>
+        <p>Made with precision in India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
