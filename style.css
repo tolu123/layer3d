@@ -38,38 +38,6 @@
 
 html { scroll-behavior: smooth; }
 
-/* ===== FULL-PAGE DYNAMIC GRID ===== */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px);
-  background-size: 48px 48px;
-  animation: gridDrift 18s linear infinite;
-}
-@keyframes gridDrift {
-  0%   { background-position: 0 0; }
-  100% { background-position: 48px 48px; }
-}
-
-/* grid pulse — fades in/out on a slow cycle */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: radial-gradient(ellipse 70% 60% at 50% 40%, transparent 40%, rgba(232,69,69,0.04) 100%);
-  animation: gridPulse 6s ease-in-out infinite;
-}
-@keyframes gridPulse {
-  0%,100% { opacity: 0.5; }
-  50%     { opacity: 1; }
-}
 
 body {
   background: var(--bg);
@@ -218,7 +186,12 @@ body {
 }
 
 .grid-overlay {
-  display: none;
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
 .glow {
